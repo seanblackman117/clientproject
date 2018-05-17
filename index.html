@@ -35,9 +35,11 @@
 
 
   <div class="row">
-    <div class="col-xs-3 col-md-4"> Yesterday's Temperature Day: 30 degrees Fahrenheit</div>
-    <div class="col-xs-6 col-md-4">Temperature Today: 76 degrees Fahrenheit </div>
-    <div class="col-xs-3 col-md-4">Tomorrow's Temperature: 90 degrees Fahrenheit</div>
+    <div class="col-xs-3 col-md-4"> Yesterday's Temperature Day: 88 degrees Fahrenheit With Thunder Showers</div>
+    <img src ="image/sadDab.jpeg" class="image-responsive">
+    <div class="col-xs-6 col-md-4">Temperature Today: 70 degrees Fahrenheit and Sunshine </div>
+    
+    <div class="col-xs-3 col-md-4">Tomorrow's Temperature: 64 degrees Fahrenheit With Rain </div>
   </div>
   
 <div id='map' style='width: 600px; height: 490px;'></div>
@@ -46,7 +48,11 @@
 mapboxgl.accessToken = 'pk.eyJ1IjoibGVvbmhvd2FyZCIsImEiOiJjamdyMmFwZWEwMzFyMnhxb3FvaGE5aHp0In0.SAnjkdRDRdniBxusFuLi2Q';
 var map = new mapboxgl.Map({
 container: 'map',
-style: 'mapbox://styles/mapbox/streets-v10'
+style: 'mapbox://styles/mapbox/streets-v10',
+center: [-74.0060, 40.7128],
+zoom: 11.15,
+attributionControl: false
+  
 });
 </script>
 
